@@ -4,6 +4,7 @@ int max(int x, int y);
 
 int main(void)
 {
+    //matrix data contains in the file below, opens file for reading data
     FILE* fp = fopen("matrix.txt", "r");
     if (fp == NULL)
     {
