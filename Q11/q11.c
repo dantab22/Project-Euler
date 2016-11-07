@@ -69,7 +69,7 @@ int main(void)
     int maxima1 = max(maxdr, maxdl);
     int maxima2 = max(maxima1, maxr);
     
-    printf("Maximum of four product is: %i \n", maxima2);
+    printf("The greatest product of four adjacent numbers is: %i \n", maxima2);
     
 	return 0;
 }
