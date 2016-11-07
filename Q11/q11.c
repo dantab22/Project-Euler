@@ -33,17 +33,6 @@ int main(void)
         }
     }
     
-    for (int i = 0; i < 20; i++)
-    {
-        //for each value in row
-        for (int j = 0; j < 20; j++)
-        {
-            //print value and space
-            printf("%2d ", matrix[i][j]);
-        }
-        printf("\n");
-    }
-    
     //due to commutivity of multiplication, we just need to look at right, diagl, diagr
     int maxr = 0; int maxdl = 0; int maxdr = 0; int temp;
     for (int i = 0; i < 20; i++)
