@@ -29,7 +29,6 @@ int main(void)
         for (int j = 0; j < 20; j++)
         {
             matrix[i][j] = buffer[(i*20)+j];
-            //printf("matrix[%i][%i] = %i \n", i , j, matrix[i][j]);
         }
     }
     
@@ -47,14 +46,14 @@ int main(void)
                 if (temp > maxr)
                     maxr = temp;
             }
-            //checking diagl entries
+            //checks bottom diagonal left entries
             if ( (i < 17) && (j > 3) )
             {
                 temp = matrix[i][j]*matrix[i+1][j-1]*matrix[i+2][j-2]*matrix[i+3][j-3];
                     if (temp > maxdl)
                         maxdl = temp;
             }
-            //checking diagr
+            //checks bottom diagonal right entries
             if ( (i < 17) && (j < 17) )
             {
                 temp = matrix[i][j]*matrix[i+1][j+1]*matrix[i+2][j+2]*matrix[i+3][j+3];
